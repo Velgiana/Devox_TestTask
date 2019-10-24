@@ -2,13 +2,12 @@ const gulp = require ('gulp');
 const concat = require ('gulp-concat');
 const autoprefixer = require ('gulp-autoprefixer');
 const cleanCSS = require ('gulp-clean-css');
-const watch = require ('gulp-watch');
+var watch = require ('gulp-watch');
 const browserSync = require('browser-sync').create();
 const cssFiles = [
 				'./node_modules/normalize.css/normalize.css',
 				'./src/css/media.css',
-				'./src/css/style.css',
-				'./src/img/*.png'
+				'./src/css/style.css'
 				];
 
 
@@ -22,7 +21,7 @@ function styles(){
 		        .pipe(cleanCSS({
 		        	level: 2
 				}))
-				.pipe(gulp.dest('./buid/css'));
+				.pipe(gulp.dest('./buid/css'))
 				.pipe(browserSync.stream());
 
 }
@@ -40,6 +39,5 @@ function watch(){
 
 
 gulp.task('styles', styles);
-gulp.task('watch', watch);
 gulp.task('watch', watch);
 

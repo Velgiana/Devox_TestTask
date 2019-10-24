@@ -88,7 +88,7 @@ margin-top: auto;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image:  url(../img/banner-background2.png);
+  background-image:  url(../../src/img/banner-background2.png);
   z-index:1; 
 }
 .background-white-layer{
@@ -106,7 +106,7 @@ opacity: 0.8;;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image:  url(../img/banner-background3.png);
+  background-image:  url(../../src/img/banner-background3.png);
   z-index:3;
 
 }
