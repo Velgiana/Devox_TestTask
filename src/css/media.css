@@ -1,0 +1,153 @@
+@media screen and (max-width: 451px){
+	.white-layer {
+    	height: 55vh;
+    }
+	.section_title{
+		 font-size:25px;
+	}
+	.section_subtitle{
+		 font-size:20px;
+	}
+	.section_title__header{
+		 padding-bottom: 10px;
+		 text-align: center;
+	}
+	.menu{
+		flex-direction: column;
+	}
+	.menu__item{
+		font-size: 14px;
+		margin: 6px;
+	}
+	.logo-hidden{
+		margin: 0 auto;
+		align-items: center;
+	}
+	.logo{
+	    width: 60%;
+		height: 50%;
+	}
+	.logo-visible{
+		display: none;
+	}
+
+	.header-content--btn{
+		display: none;
+	}
+	.banner-content{
+		top: 40%;
+		left: 25%;
+		width: 60%;
+	}
+	.image-content img{
+		max-width: 90%;
+	}
+	.advantages-content__item {
+	    width: 170px;
+	    height: 100px;
+	}
+	.advantages-content{
+		right: 25%;
+   		top: 102%;
+   	}
+   	.footer_content{
+   		flex-wrap: nowrap;
+   	}
+   	.footer-links{
+   		font-size: 14px;
+   	}
+   	.footer-legacy{
+   		font-size: 10px;
+   		padding: 0;
+   	}
+}
+
+@media (min-width: 451px) and (max-width: 780px) {
+	.logo{
+	    width: 50%;
+		height: 50%;
+	}
+	.logo-visible{
+		justify-content: center;
+		width: 25%;
+		height: 50%;
+    }
+
+	.menu{
+		flex-direction: row;
+	}
+	.menu__item{
+	    align-items: center;
+		font-size: 16px;
+		margin: 6px;
+	}
+	.banner-content{
+		top: 20%;
+		left: 25%;
+		width: 60%;
+	}
+	.image-content img{
+		max-width: 90%;
+	}
+
+	.section_title{
+		 font-size:35px;
+	}
+	.section_subtitle{
+		 font-size:25px;
+	}
+	.section_title__header{
+		 padding-bottom: 10px;
+		 text-align: center;
+	}
+	.advantages-content__item {
+		 width: 172px;
+		 height: 110px;
+	}
+	.advantages-content{
+		right: 15%;
+   		top: 110%;
+   	}
+}
+
+
+
+@media (min-width:781px) and (max-width:980px) {
+	.menu{
+		justify-content: center;
+	}
+	.banner-content{
+		top: 25%;
+		left: 25%;
+		width: 60%;
+	}
+	.section_title{
+		 font-size:35px;
+	}
+	.section_title__header{
+		text-align: center;
+
+	}
+	.section_subtitle{
+		 font-size:25px;
+	}
+	.image-content img{
+		max-width: 75%;
+	}
+	.advantages-content{
+		right: 15%;
+   		top: 100%;
+   	}
+}
+
+
+@media (min-width: 451px) and (max-width: 3000px){
+	.logo-hidden{
+		display: none;
+	}
+}
+
+
+
+
+
