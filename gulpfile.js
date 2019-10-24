@@ -1,13 +1,15 @@
+
 const gulp = require ('gulp');
 const concat = require ('gulp-concat');
 const autoprefixer = require ('gulp-autoprefixer');
 const cleanCSS = require ('gulp-clean-css');
-var watch = require ('gulp-watch');
 const browserSync = require('browser-sync').create();
+var imagemin = require('gulp-imagemin');
+var imgCompress = require('imagemin-optipng');
 const cssFiles = [
 				'./node_modules/normalize.css/normalize.css',
-				'./src/css/media.css',
-				'./src/css/style.css'
+				'./src/css/style.css',
+				'./src/css/media.css'
 				];
 
 
@@ -26,18 +28,14 @@ function styles(){
 
 }
 
-function watch(){
-			browserSync.init({
-	        server: {
-	            baseDir: "./"
-	        }
-	    	});
-	        gulp.watch('./src/css/style.css');
-	        gulp.watch('./src/css/media.css');
-			gulp.watch("./*.html").on('change', browserSync.reload);
-}
-
+gulp.task('asyncImgCompress', done => {
+    return gulp.src('./src/img/**')
+  			.pipe(imagemin({
+  				progressive: true
+  			}))
+  			.pipe(gulp.dest('./buid/img/'));
+    done();
+});
 
 gulp.task('styles', styles);
-gulp.task('watch', watch);
 
